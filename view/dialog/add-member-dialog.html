@@ -1,0 +1,21 @@
+<div id="add-member-dialog" class="modal round-container box-container">
+  <div class="content">
+    <span class="float-right exit">&times;</span>
+    <h3 class="text-center fw-bold">
+    <i class="bi bi-person-fill"></i>
+    Add new Member
+    </h3>
+    <div class="input-group">
+      <label class="label w-100 p-2 m-2">Friend List</label>
+      <ul class="list w-100 p-2 m-2">
+        {% for friend in friends %}
+          <li>
+            <input type="checkbox">
+            {{friend}}
+          </li>
+        {% endfor %}
+      </ul>
+      <button class="form-control float-right btn btn-success">submit</button>
+    </div>
+  </div>
+</div>

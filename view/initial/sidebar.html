@@ -1,0 +1,10 @@
+<div>
+  <p class="text-center fw-bold p-1">Previous Conversations</p>
+  <ul class="group-list">
+    {% for member in members %}
+    <li class="group-list-item">
+      <a href="/groups/{{id}}?member={{member}}">Member Name {{member}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
